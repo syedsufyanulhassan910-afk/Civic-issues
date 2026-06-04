@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="1.js"></script> -->
+</head>
+<body>
+    
+<!-- <a href="1.jpg"></a> -->
+
+<div class="container">
+
+    <h1 class="text">This is my wbe page</h1>
+    <h1 class="text">you should click the button</h1>
+
+</div>
+
+<button onclick="example()">click</button>
+
+<script>
+
+function example(){
+
+let container = document.querySelector('.container');
+
+let text = document.getElementById('text');
+
+let append1 = document.createElement('p');
+
+append1.textContent = 'welcome to my web';
+
+container.append(append1);
+
+
+// let append1 = document.createElement('p');
+
+// append1.textContent = 'welcome to my web';
+
+// container.after(append1);
+
+
+// let append1 = document.createElement('p');
+
+// append1.textContent = 'welcome to my web';
+
+// container.prepend(append1);
+
+
+// let append1 = document.createElement('p');
+
+// append1.textContent = 'welcome to my web';
+
+// container.before(append1);
+
+}
+example()
+
+// let result = document.querySelector('a')
+
+// let url = result.getAttribute('href')
+
+// console.log(url)
+// document.writeln(url)
+
+// let result = document.querySelector(a)
+
+// result.setAttribute('heref', '2.jpg')
+
+// let data = result.getAttribute(herf)
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Animation Test</title>
+    
+    <script src="googleapis.com"></script>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        #panel { 
+            padding: 20px; 
+            display: none; 
+            background-color: #f1f1f1; 
+            border: 1px solid #ccc; 
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+        button { padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <button id="toggle-btn">📂 Open Secret Message</button>
+    <div id="panel">
+        <h3>Success!</h3>
+        <p>This panel animates smoothly using jQuery's slideToggle effect.</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+         
+            $("#toggle-btn").click(function() {
+               
+                $("#panel").slideToggle(400, function() {
+                 
+                    if ($("#panel").is(":visible")) {
+                        $("#toggle-btn").text("📁 Close Secret Message");
+                    } else {
+                        $("#toggle-btn").text("📂 Open Secret Message");
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
