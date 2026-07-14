@@ -1,0 +1,6 @@
+Name:Ahmed Khan
+Age:21
+course: Web Development
+Enrolled:Yes Enrolled
+Skills:HTML,CSS,Javascript
+-----

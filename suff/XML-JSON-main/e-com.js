@@ -1,0 +1,31 @@
+const orderdetails = {
+    "orderId": "ORD-77892",
+    "customer": {
+        "id": 4501,
+        "name": "Hamza Ali",
+        "contact": {
+            "email": "hamza@example.com",
+            "phone": "+923001234567"
+        }
+    },
+    "items": [
+        {
+            "productId": 10,
+            "name": "Wireless Mouse",
+            "price": 1500,
+            "qty": 2
+        },
+        {
+            "productId": 14,
+            "name": "Mechanical Keyboard",
+            "price": 4500,
+            "qty": 1
+        }
+    ],
+    "payment": {
+        "method": "Cash on Delivery",
+        "isPaid": false
+    }
+}
+
+console.log(orderdetails.customer.contact.email)

@@ -1,0 +1,31 @@
+{
+    "title": "PostsArray",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "required": [
+            "userId",
+            "id",
+            "title",
+            "body"
+        ],
+        "properties": {
+            "userId": {
+                "type": "integer",
+                "description": "The unique identifier of the user who authored the post."
+            },
+            "id": {
+                "type": "integer",
+                "description": "The unique identifier of the post."
+            },
+            "title": {
+                "type": "string",
+                "description": "The headline or title text of the post."
+            },
+            "body": {
+                "type": "string",
+                "description": "The main text content of the post."
+            }
+        }
+    }
+}
